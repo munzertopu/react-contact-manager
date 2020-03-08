@@ -6,9 +6,7 @@ class Contact extends Component {
     showContactInfo: true
   };
 
-  onDelteClick = () => {
-    this.props.deleteClickHandler();
-  };
+  onDelteClick = () => {};
   OnShowClick = () => {
     this.setState({ showContactInfo: !this.state.showContactInfo });
   };
@@ -43,8 +41,7 @@ class Contact extends Component {
 }
 
 Contact.propTypes = {
-  contact: PropTypes.object.isRequired,
-  deleteClickHandler: PropTypes.func.isRequired
+  contact: PropTypes.object.isRequired
 };
 
 export default Contact;

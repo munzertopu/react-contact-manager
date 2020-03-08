@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Header = props => {
+const Headera = props => {
   const { branding } = props;
 
   return (
@@ -24,12 +24,12 @@ const Header = props => {
   );
 };
 
-Header.defaultProps = {
+Headera.defaultProps = {
   branding: "My App"
 };
 
-Header.propTypes = {
+Headera.propTypes = {
   branding: PropTypes.string.isRequired
 };
 
-export default Header;
+export default Headera;
